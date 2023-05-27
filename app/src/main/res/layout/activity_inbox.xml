@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".inboxactivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:padding="20dp"
+            android:background="@color/lightblue">
+
+            <ImageView
+                android:id="@+id/account_image"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/chatbubble"
+                android:layout_centerHorizontal="true"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Inbox"
+                android:textSize="20sp"
+                android:textColor="@color/darkblue"
+                android:fontFamily="@font/daretro_regular"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="80dp"/>
+
+            <ImageButton
+                android:onClick="BackInbox"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginHorizontal="10dp"
+                android:background="@drawable/back"/>
+
+
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:background="@color/lightblue"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Inbox 1"
+                app:boxBackgroundColor="@android:color/white"
+                android:textColorHint="@color/black"
+                android:layout_marginBottom="10dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Info inbox 1"
+                    android:textColor="@color/darkblue"/>
+                <!--android:drawableLeft="@drawable/"
+                android:drawablePadding="10dp-->
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Inbox 2"
+                android:textColorHint="@color/black"
+                app:boxBackgroundColor="@android:color/white"
+                android:layout_marginBottom="10dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/darkblue"
+                    android:text="Info inbox 2"/>
+                <!--android:drawableLeft="@drawable/"
+                android:drawablePadding="10dp-->
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Inbox 3"
+                app:boxStrokeColor="@color/darkblue"
+                android:textColorHint="@color/black"
+                app:boxBackgroundColor="@android:color/white"
+                android:layout_marginBottom="10dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Info inbox 3"
+                    android:textColor="@color/darkblue"/>
+
+                <!--android:drawableLeft="@drawable/"
+                android:drawablePadding="10dp-->
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:padding="0dp"
+                android:layout_marginTop="30dp">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:onClick="guideCardInbox"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_margin="10dp"
+                    android:elevation="10dp"
+                    app:cardBackgroundColor="@color/softyellow"
+                    app:cardCornerRadius="20dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="5dp">
+
+                        <ImageView
+                            android:id="@+id/guide_logo"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/chat"
+                            android:layout_alignParentRight="true"/>
+
+                        <TextView
+                            android:id="@+id/chat_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:text="Feeling lost? Follow this star for guidance"
+                            android:textColor="@color/darkblue"
+                            android:includeFontPadding="false"
+                            android:textSize="12sp"
+                            android:fontFamily="@font/daretro_regular"
+                            android:layout_centerVertical="true"/>
+
+
+                    </RelativeLayout>
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+</LinearLayout>
+    </LinearLayout>
+                    </RelativeLayout>
+
+

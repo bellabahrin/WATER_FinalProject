@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".watermaintenance">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:padding="20dp"
+            android:background="@color/lightblue">
+
+            <ImageView
+                android:id="@+id/help_image"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/announce2"
+                android:layout_centerHorizontal="true"/>
+
+
+
+            <TextView
+                android:id="@+id/main_tittle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Water Maintenance"
+                android:textSize="20sp"
+                android:textColor="@color/darkblue"
+                android:fontFamily="@font/daretro_regular"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="80dp"/>
+
+            <ImageButton
+                android:onClick="BackMaintenance"
+                android:id="@+id/Back"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginHorizontal="10dp"
+                android:background="@drawable/back"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Do enter your region (eg: Selangor)"
+                android:textSize="10sp"
+                android:textColor="@color/darkblue"
+                android:fontFamily="@font/kbcloudyday"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/main_tittle"
+                android:layout_marginTop="10dp"/>
+
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="0dp"
+            android:layout_marginTop="-40dp">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:elevation="10dp"
+                app:cardBackgroundColor="@color/softyellow"
+                app:cardCornerRadius="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp">
+
+                    <EditText
+                        android:id="@+id/search_txt"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:hint="Region"
+                        android:textColorHint="@color/darkblue"
+                        android:includeFontPadding="false"
+                        android:textSize="13sp"
+                        android:layout_alignParentLeft="true"
+                        android:fontFamily="@font/kbcloudyday"
+                        android:layout_centerInParent="true"/>
+
+                    <Button
+                       android:id="@+id/searchBtn"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:text="Go"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/button_round"/>
+
+
+
+
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:layout_marginTop="-0dp"
+            android:orientation="vertical">
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:elevation="10dp"
+                app:cardBackgroundColor="@color/softyellow"
+                app:cardCornerRadius="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp">
+
+
+                    <TextView
+                        android:id="@+id/activity_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Activity : "
+                        android:textColor="@color/darkblue"
+                        android:textColorHint="@color/darkblue"
+                        android:inputType="text"
+                        android:textSize="15sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/activity_maintenance"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/darkblue"
+                        android:textColorHint="@color/darkblue"
+                        android:inputType="text"
+                        android:textSize="15sp"
+                        android:layout_toRightOf="@+id/activity_title" />
+
+                    <TextView
+                        android:id="@+id/start_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Start : "
+                        android:textColor="@color/darkblue"
+                        android:textColorHint="@color/darkblue"
+                        android:inputType="text"
+                        android:textSize="15sp"
+                        android:layout_below="@+id/activity_title"
+                        android:layout_marginTop="20dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/start_maintenance"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/darkblue"
+                        android:textColorHint="@color/darkblue"
+                        android:inputType="text"
+                        android:textSize="15sp"
+                        android:layout_marginTop="20dp"
+                        android:layout_below="@+id/activity_maintenance"
+                        android:layout_toRightOf="@+id/start_title" />
+
+                    <TextView
+                        android:id="@+id/end_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Completion : "
+                        android:textColor="@color/darkblue"
+                        android:textColorHint="@color/darkblue"
+                        android:inputType="text"
+                        android:textSize="15sp"
+                        android:layout_below="@+id/start_title"
+                        android:layout_marginTop="20dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/end_maintenance"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/darkblue"
+                        android:textColorHint="@color/darkblue"
+                        android:inputType="text"
+                        android:textSize="15sp"
+                        android:layout_marginTop="20dp"
+                        android:layout_below="@+id/start_maintenance"
+                        android:layout_toRightOf="@+id/end_title" />
+
+                    <TextView
+                        android:id="@+id/region_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Region : "
+                        android:textColor="@color/darkblue"
+                        android:textColorHint="@color/darkblue"
+                        android:inputType="text"
+                        android:textSize="15sp"
+                        android:layout_below="@+id/end_title"
+                        android:layout_marginTop="20dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/region_maintenance"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/darkblue"
+                        android:textColorHint="@color/darkblue"
+                        android:inputType="text"
+                        android:textSize="15sp"
+                        android:layout_marginTop="20dp"
+                        android:layout_below="@+id/end_maintenance"
+                        android:layout_toRightOf="@+id/region_title" />
+
+                    <TextView
+                        android:id="@+id/area_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Area affected: "
+                        android:textColor="@color/darkblue"
+                        android:textColorHint="@color/darkblue"
+                        android:inputType="text"
+                        android:textSize="15sp"
+                        android:layout_below="@+id/region_title"
+                        android:layout_marginTop="20dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/area_maintenance"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/darkblue"
+                        android:textColorHint="@color/darkblue"
+                        android:inputType="text"
+                        android:textSize="15sp"
+                        android:layout_marginTop="20dp"
+                        android:layout_below="@+id/region_maintenance"
+                        android:layout_toRightOf="@+id/area_title" />
+
+                    <TextView
+                        android:id="@+id/tq_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Thank you for bearing with us "
+                        android:textColor="@color/darkblue"
+                        android:fontFamily="@font/kbcloudyday"
+                        android:textColorHint="@color/darkblue"
+                        android:inputType="text"
+                        android:textSize="15sp"
+                        android:layout_below="@+id/area_title"
+                        android:layout_marginTop="60dp"
+                        />
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/worker"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/area_maintenance"/>
+
+
+
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

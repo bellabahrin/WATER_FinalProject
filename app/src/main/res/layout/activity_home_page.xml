@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".homepageactivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:padding="10dp"
+        android:background="@color/lightblue">
+
+        <ImageView
+            android:id="@+id/account_image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/waterappicon"
+            android:layout_centerHorizontal="true"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Water App"
+            android:textSize="25sp"
+            android:textColor="@color/darkblue"
+            android:fontFamily="@font/kbcloudyday"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp"/>
+
+        <ImageView
+            android:onClick="Logout"
+            android:id="@+id/logout"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/logout"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentLeft="true"/>
+
+
+
+    </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:background="@color/lightblue"
+            android:layout_marginTop="-60dp">
+
+            <com.google.android.material.card.MaterialCardView
+                android:onClick="waterInfo_card"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:elevation="10dp"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardCornerRadius="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/waterInfo_logo"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/waterinfo"
+                        android:layout_centerHorizontal="true"/>
+
+                    <TextView
+                        android:id="@+id/waterInfo_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Water Info"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/darkblue"
+                        android:includeFontPadding="false"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/kbcloudyday"
+                        android:layout_centerInParent="true"
+                        android:layout_below="@id/waterInfo_logo"/>
+
+
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:onClick="helpCenter_card"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:elevation="10dp"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardCornerRadius="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/helpCenter_logo"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/helpcenter"
+                        android:layout_centerHorizontal="true"/>
+
+                    <TextView
+                        android:id="@+id/helpCenter_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Help Center"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/darkblue"
+                        android:includeFontPadding="false"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/kbcloudyday"
+                        android:layout_below="@+id/helpCenter_logo"
+                        android:layout_centerInParent="true"/>
+
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:background="@color/lightblue"
+            android:layout_marginTop="-20dp">
+
+            <com.google.android.material.card.MaterialCardView
+                android:onClick="eAduan_card"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:elevation="10dp"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardCornerRadius="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/eAduan_logo"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/eaduan"
+                        android:layout_centerHorizontal="true"/>
+
+                    <TextView
+                        android:id="@+id/eaduan_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="E   Aduan"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/darkblue"
+                        android:includeFontPadding="false"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/kbcloudyday"
+                        android:layout_centerInParent="true"
+                        android:layout_below="@id/eAduan_logo"/>
+
+
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:onClick="contactus_card"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:elevation="10dp"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardCornerRadius="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/contactUs_logo"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/contactus"
+                        android:layout_centerHorizontal="true"/>
+
+                    <TextView
+                        android:id="@+id/account_email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Help Line"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/darkblue"
+                        android:includeFontPadding="false"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/kbcloudyday"
+                        android:layout_below="@+id/contactUs_logo"
+                        android:layout_centerInParent="true"/>
+
+
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!--<com.google.android.material.card.MaterialCardView
+                android:onClick="myAcc_card"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:elevation="10dp"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardCornerRadius="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/myAcc_logo"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/myacc"
+                        android:layout_centerHorizontal="true"/>
+
+                    <TextView
+                        android:id="@+id/acc_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="My"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/darkblue"
+                        android:includeFontPadding="false"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/kbcloudyday"
+                        android:layout_below="@+id/myAcc_logo"
+                        android:layout_centerHorizontal="true"/>
+
+                    <TextView
+                        android:id="@+id/help_center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Account"
+                        android:textColor="@color/darkblue"
+                        android:includeFontPadding="false"
+                        android:textSize="17sp"
+                        android:fontFamily="@font/kbcloudyday"
+                        android:layout_below="@+id/acc_txt"
+                        android:layout_centerHorizontal="true"/>
+
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>-->
+
+        </LinearLayout>
+
+      <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="0dp"
+            android:layout_marginTop="-20dp">
+
+            <com.google.android.material.card.MaterialCardView
+                android:onClick="guide_card"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:elevation="10dp"
+                app:cardBackgroundColor="@color/softyellow"
+                app:cardCornerRadius="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/guide_logo"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/chat"
+                        android:layout_alignParentRight="true"/>
+
+                    <TextView
+                        android:id="@+id/chat_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:text="Feeling lost? Follow this star for guidance"
+                        android:textColor="@color/darkblue"
+                        android:includeFontPadding="false"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/kbcloudyday"
+                        android:layout_centerVertical="true"/>
+
+
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+      </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="0dp"
+            android:layout_marginTop="-10dp">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:elevation="10dp"
+                app:cardBackgroundColor="@color/blue">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp">
+
+
+                    <TextView
+                        android:id="@+id/announce_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:text="Annoucement"
+                        android:textColor="@android:color/white"
+                        android:includeFontPadding="false"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/kbcloudyday"
+                        android:layout_centerInParent="true"/>
+
+
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:layout_marginTop="-20dp">
+
+            <com.google.android.material.card.MaterialCardView
+                android:onClick="Announcement1"
+                android:layout_width="0dp"
+                android:layout_height="110dp"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:elevation="10dp"
+                app:cardBackgroundColor="@color/lightblue"
+                app:cardCornerRadius="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/announce1_logo"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/announce1"
+                        android:layout_centerHorizontal="true"/>
+
+                    <TextView
+                        android:id="@+id/announce1_txt"
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        android:text="Water News"
+                        android:textColor="@color/darkblue"
+                        android:includeFontPadding="false"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/kbcloudyday"
+                        android:textAlignment="center"
+                        android:layout_centerInParent="true"
+                        android:layout_below="@id/announce1_logo"/>
+
+
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:onClick="Announcement2"
+                android:layout_width="0dp"
+                android:layout_height="110dp"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:elevation="10dp"
+                app:cardBackgroundColor="@color/lightblue"
+                app:cardCornerRadius="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/announce2_logo"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/announce2"
+                        android:layout_centerHorizontal="true"/>
+
+                    <TextView
+                        android:id="@+id/announce2_txt"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:text="Water Maintenance"
+                        android:textColor="@color/darkblue"
+                        android:includeFontPadding="false"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/kbcloudyday"
+                        android:layout_below="@+id/announce2_logo"
+                        android:textAlignment="center"
+                        android:layout_centerInParent="true"/>
+
+
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "490299615647",
+    "firebase_url": "https://waterappmanagement-2295a-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "waterappmanagement-2295a",
+    "storage_bucket": "waterappmanagement-2295a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:490299615647:android:d10bc213d26bc2534f35aa",
+        "android_client_info": {
+          "package_name": "com.example.waterappmanagement"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "490299615647-v689382dsab6kkmk12p78i287p9gu8lj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.waterappmanagement",
+            "certificate_hash": "2a4f1e6178ee401c8554475c2918741b36220a20"
+          }
+        },
+        {
+          "client_id": "490299615647-d20t0fv045mi9oc1279rcbdr8im9n89e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAimFE0728Iucp_wfIrZP9wQlCBxXdjklc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "490299615647-d20t0fv045mi9oc1279rcbdr8im9n89e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

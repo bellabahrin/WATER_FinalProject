@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/lightblue"
+    tools:context=".verifyno"
+    android:padding="13dp">
+
+    <ImageView
+        android:id="@+id/signin_logo"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_gravity="center_horizontal"
+        android:transitionName="logo_image"
+        android:background="@drawable/waterappicon" />
+
+    <TextView
+        android:id="@+id/signin_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Verify Phone No"
+        android:layout_marginTop="60dp"
+        android:layout_gravity="center_horizontal"
+        android:transitionName="logo_text"
+        android:textSize="35sp"
+        android:textColor="@color/darkblue"
+        android:fontFamily="@font/kbcloudyday"/>
+
+    <TextView
+        android:id="@+id/signin_msg"
+        android:transitionName="logo_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_gravity="center_horizontal"
+        android:textSize="15sp"
+        android:textColor="@android:color/black"
+        android:fontFamily="serif"
+        android:text="Enter the verification code here"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/verify_otp"
+        android:transitionName="email_tran"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter OTP"
+        android:backgroundTint="@color/softyellow"
+        style="@style/Theme.MaterialComponents.Light.DarkActionBar">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/verify_button"
+                android:transitionName="signup_tran"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:elevation="10dp"
+                app:cardBackgroundColor="@color/softyellow"
+                app:cardCornerRadius="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="0dp">
+
+
+                    <TextView
+                        android:id="@+id/verify_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:text="Verify here"
+                        android:textColor="@color/darkblue"
+                        android:includeFontPadding="false"
+                        android:textSize="13sp"
+                        android:fontFamily="@font/kbcloudyday"
+                        android:layout_centerInParent="true"/>
+
+
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

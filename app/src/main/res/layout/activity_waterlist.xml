@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    tools:context=".waterlist">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:padding="20dp"
+            android:background="@color/lightblue">
+
+            <ImageView
+                android:id="@+id/help_image"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/waterlist"
+                android:layout_centerHorizontal="true"/>
+
+            <ImageButton
+                android:onClick="InboxWaterList"
+                android:id="@+id/chat_logo"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginHorizontal="285dp"
+                android:background="@drawable/chatbubble"/>
+
+            <TextView
+                android:id="@+id/main_tittle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Water List"
+                android:textSize="20sp"
+                android:textColor="@color/darkblue"
+                android:fontFamily="@font/daretro_regular"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="80dp"/>
+
+            <ImageButton
+                android:onClick="BackNews"
+                android:id="@+id/Back"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginHorizontal="10dp"
+                android:background="@drawable/back"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Do enter the date of news (eg: 11 August 2022)"
+                android:textSize="10sp"
+                android:textColor="@color/darkblue"
+                android:fontFamily="@font/kbcloudyday"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/main_tittle"
+                android:layout_marginTop="10dp"/>
+
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="0dp"
+            android:layout_marginTop="-40dp">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:elevation="10dp"
+                app:cardBackgroundColor="@color/softyellow"
+                app:cardCornerRadius="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp">
+
+                    <EditText
+                        android:id="@+id/news_txt"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:hint="State of Water Treatment"
+                        android:textColorHint="@color/darkblue"
+                        android:includeFontPadding="false"
+                        android:textSize="13sp"
+                        android:layout_alignParentLeft="true"
+                        android:fontFamily="@font/kbcloudyday"
+                        android:layout_centerInParent="true"/>
+
+                    <Button
+                        android:id="@+id/news_btn"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:text="Go"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/button_round"/>
+
+
+
+
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:layout_marginTop="-0dp"
+            android:orientation="vertical">
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:elevation="10dp"
+                app:cardBackgroundColor="@color/softyellow"
+                app:cardCornerRadius="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+
+
+
+                    <TextView
+                        android:id="@+id/state_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:text=""
+                        android:textColor="@color/darkblue"
+                        android:textColorHint="@color/darkblue"
+                        android:fontFamily="@font/daretro_regular"
+                        android:inputType="textMultiLine"
+                        android:textSize="20sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/date_desc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Date : "
+                        android:textColor="@color/darkblue"
+                        android:textColorHint="@color/darkblue"
+                        android:inputType="text"
+                        android:textSize="15sp"
+                        android:layout_below="@+id/state_title"
+                        android:layout_marginTop="20dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/date_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/darkblue"
+                        android:textColorHint="@color/darkblue"
+                        android:inputType="text"
+                        android:textSize="15sp"
+                        android:layout_marginTop="20dp"
+                        android:layout_below="@+id/state_title"
+                        android:layout_toRightOf="@+id/date_desc" />
+
+                    <TextView
+                        android:id="@+id/source_desc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Source : "
+                        android:textColor="@color/darkblue"
+                        android:textColorHint="@color/darkblue"
+                        android:inputType="text"
+                        android:textSize="15sp"
+                        android:layout_below="@+id/date_desc"
+                        android:layout_marginTop="20dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/source_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/darkblue"
+                        android:textColorHint="@color/darkblue"
+                        android:inputType="text"
+                        android:textSize="15sp"
+                        android:layout_marginTop="20dp"
+                        android:layout_below="@+id/date_title"
+                        android:layout_toRightOf="@+id/source_desc" />
+
+
+                    <TextView
+                        android:id="@+id/summary_desc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Summary: "
+                        android:textColor="@color/darkblue"
+                        android:textColorHint="@color/darkblue"
+                        android:inputType="text"
+                        android:textSize="15sp"
+                        android:layout_below="@+id/source_desc"
+                        android:layout_marginTop="20dp"
+                        />
+
+
+
+                    <TextView
+                        android:id="@+id/summary_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:text=""
+                        android:textColor="@color/darkblue"
+                        android:textColorHint="@color/darkblue"
+                        android:inputType="textMultiLine"
+                        android:textSize="15sp"
+                        android:layout_marginTop="20dp"
+                        android:layout_below="@+id/source_title"
+                        android:layout_toRightOf="@+id/summary_desc" />
+
+
+
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+
+        </LinearLayout>
+
+        =
+
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".billactivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:padding="20dp"
+            android:background="@color/lightblue">
+
+            <ImageView
+                android:id="@+id/bill_image"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/bill"
+                android:layout_centerHorizontal="true"/>
+
+            <ImageButton
+                android:onClick="InboxBill"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginHorizontal="300dp"
+                android:background="@drawable/chatbubble"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Billing Information"
+                android:textSize="20sp"
+                android:textColor="@color/darkblue"
+                android:fontFamily="@font/daretro_regular"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="80dp"/>
+
+            <ImageButton
+                android:onClick="BackBill"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginHorizontal="10dp"
+                android:background="@drawable/back"/>
+
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:layout_marginTop="-0dp"
+            android:orientation="vertical">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:layout_weight="1"
+                android:elevation="10dp"
+                app:cardBackgroundColor="@color/lightblue"
+                app:cardCornerRadius="40dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/currentBill_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Current Bill"
+                        android:textColor="@color/darkblue"
+                        android:includeFontPadding="false"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/daretro_regular"
+                        android:padding="20dp" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:boxBackgroundColor="@color/lightblue"
+                        android:hint="RM"
+                        android:layout_marginTop="20dp">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/darkblue"
+                            android:text="50.60"
+                            android:layout_marginStart="220dp"
+                            android:textSize="40sp"/>
+                        <!--android:drawableLeft="@drawable/"
+                        android:drawablePadding="10dp-->
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_weight="1"
+                android:layout_marginTop="20dp"
+                android:elevation="10dp"
+                app:cardBackgroundColor="@color/lightblue"
+                app:cardCornerRadius="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/ViewPDF_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Bill Payment History"
+                        android:textColor="@color/darkblue"
+                        android:includeFontPadding="false"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/daretro_regular"
+                        android:padding="20dp"/>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:boxBackgroundColor="@color/lightblue"
+                        android:hint="Date"
+                        android:layout_marginTop="40dp">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/darkblue"
+                            android:text="21/2/2022"
+                            android:layout_marginStart="20dp"
+                            android:textSize="20sp"/>
+                        <!--android:drawableLeft="@drawable/"
+                        android:drawablePadding="10dp-->
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:boxBackgroundColor="@color/lightblue"
+                        android:hint="Date"
+                        android:layout_marginTop="100dp">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/darkblue"
+                            android:text="21/3/2022"
+                            android:layout_marginStart="20dp"
+                            android:textSize="20sp"/>
+                        <!--android:drawableLeft="@drawable/"
+                        android:drawablePadding="10dp-->
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:padding="0dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="-310dp">
+
+            <com.google.android.material.card.MaterialCardView
+                android:onClick="payNow_card"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:elevation="10dp"
+                app:cardBackgroundColor="@color/softyellow"
+                app:cardCornerRadius="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/chat_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:text="Pay Now"
+                        android:textColor="@color/darkblue"
+                        android:includeFontPadding="false"
+                        android:textSize="20sp"
+                        android:fontFamily="@font/daretro_regular"
+                        android:layout_centerInParent="true"/>
+
+
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:padding="0dp"
+            android:layout_marginStart="280dp"
+            android:layout_marginTop="100dp">
+
+            <com.google.android.material.card.MaterialCardView
+                android:onClick="billHistory1_card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:elevation="10dp"
+                app:cardBackgroundColor="@color/softyellow"
+                app:cardCornerRadius="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/billHistory1_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:text="Preview"
+                        android:textColor="@color/darkblue"
+                        android:includeFontPadding="false"
+                        android:textSize="10sp"
+                        android:fontFamily="@font/daretro_regular"
+                        android:layout_centerInParent="true"/>
+
+
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:padding="0dp"
+            android:layout_marginStart="280dp"
+            android:layout_marginTop="20dp">
+
+            <com.google.android.material.card.MaterialCardView
+                android:onClick="billHistory2_card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:elevation="10dp"
+                app:cardBackgroundColor="@color/softyellow"
+                app:cardCornerRadius="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/billHistory2_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:text="Preview"
+                        android:textColor="@color/darkblue"
+                        android:includeFontPadding="false"
+                        android:textSize="10sp"
+                        android:fontFamily="@font/daretro_regular"
+                        android:layout_centerInParent="true"/>
+
+
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:padding="0dp"
+            android:layout_marginTop="30dp">
+
+            <com.google.android.material.card.MaterialCardView
+                android:onClick="guideCardBill"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:elevation="10dp"
+                app:cardBackgroundColor="@color/softyellow"
+                app:cardCornerRadius="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/guide_logo"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/chat"
+                        android:layout_alignParentRight="true"/>
+
+                    <TextView
+                        android:id="@+id/guide_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:text="Feeling lost? Follow this star for guidance"
+                        android:textColor="@color/darkblue"
+                        android:includeFontPadding="false"
+                        android:textSize="13sp"
+                        android:fontFamily="@font/daretro_regular"
+                        android:layout_centerVertical="true"/>
+
+
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+
+
+
+
+
+
+    </LinearLayout>
+    </RelativeLayout>
+

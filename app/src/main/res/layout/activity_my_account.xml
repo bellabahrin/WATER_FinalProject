@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".myaccountactivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:padding="20dp"
+        android:background="@color/lightblue">
+
+        <ImageView
+            android:id="@+id/account_image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/myacc"
+            android:layout_centerHorizontal="true"/>
+
+        <ImageButton
+            android:onClick="InboxMyAcc"
+            android:id="@+id/chat_logo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginHorizontal="300dp"
+            android:background="@drawable/chatbubble"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Account"
+            android:textSize="20sp"
+            android:textColor="@color/darkblue"
+            android:fontFamily="@font/daretro_regular"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp"/>
+
+        <ImageButton
+            android:onClick="BackMyAcc"
+            android:id="@+id/Back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginHorizontal="10dp"
+            android:background="@drawable/back"/>
+
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginTop="-80dp">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:elevation="10dp"
+            app:cardCornerRadius="20dp"
+            app:cardBackgroundColor="@color/softyellow">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp">
+
+
+                <TextView
+                    android:id="@+id/name_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Names of person"
+                    android:includeFontPadding="false"
+                    android:textSize="20sp"
+                    android:textColor="@color/darkblue"
+                    android:fontFamily="@font/daretro_regular"
+                    android:layout_centerInParent="true"/>
+
+                <TextView
+                    android:id="@+id/account_chatDesc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Welcome"
+                    android:includeFontPadding="false"
+                    android:textSize="14sp"
+                    android:textColor="@color/darkblue"
+                    android:layout_above="@id/name_label"
+                    android:layout_centerHorizontal="true"/>
+
+            </RelativeLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:layout_marginTop="-30dp"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/fullname_acc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Full Name"
+            app:boxBackgroundColor="@android:color/white"
+            android:textColorHint="@color/black"
+            android:layout_marginBottom="10dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:editable="false"
+                android:textColor="@color/darkblue"/>
+                <!--android:drawableLeft="@drawable/"
+                android:drawablePadding="10dp-->
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/username_acc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="User Name"
+            android:textColorHint="@color/black"
+            app:boxBackgroundColor="@android:color/white"
+            android:layout_marginBottom="10dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:editable="false"
+                android:textColor="@color/darkblue"/>
+            <!--android:drawableLeft="@drawable/"
+            android:drawablePadding="10dp-->
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/idNo_acc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ID Number"
+            app:boxStrokeColor="@color/darkblue"
+            android:textColorHint="@color/black"
+            app:boxBackgroundColor="@android:color/white"
+            android:layout_marginBottom="10dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:editable="false"
+                android:textColor="@color/darkblue"/>
+
+            <!--android:drawableLeft="@drawable/"
+            android:drawablePadding="10dp-->
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/email_acc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:textColorHint="@color/black"
+            app:boxBackgroundColor="@android:color/white"
+            android:layout_marginBottom="10dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:editable="false"
+                android:textColor="@color/darkblue"/>
+            <!--android:drawableLeft="@drawable/"
+            android:drawablePadding="10dp-->
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/phoneNo_acc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Phone Number"
+            android:textColorHint="@color/black"
+            app:boxBackgroundColor="@android:color/white"
+            android:layout_marginBottom="10dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:editable="false"
+                android:textColor="@color/darkblue"/>
+            <!--android:drawableLeft="@drawable/"
+            android:drawablePadding="10dp-->
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/address_acc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Address"
+            android:textColorHint="@color/black"
+            app:boxBackgroundColor="@android:color/white"
+            android:layout_marginBottom="10dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:editable="false"
+                android:textColor="@color/darkblue"/>
+            <!--android:drawableLeft="@drawable/"
+            android:drawablePadding="10dp-->
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/password_acc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:textColorHint="@color/black"
+            app:boxBackgroundColor="@android:color/white"
+            android:layout_marginBottom="10dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:editable="false"
+                android:textColor="@color/darkblue"/>
+            <!--android:drawableLeft="@drawable/"
+            android:drawablePadding="10dp-->
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="0dp"
+            android:layout_marginTop="-10dp">
+
+            <com.google.android.material.card.MaterialCardView
+                android:onClick="logoutMyAcc"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:elevation="10dp"
+                app:cardBackgroundColor="@color/lightblue"
+                app:cardCornerRadius="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/emergency_logo"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/logout"
+                        android:layout_toLeftOf="@+id/emergency_txt"/>
+
+                    <TextView
+                        android:id="@+id/emergency_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="LOGOUT"
+                        android:textColor="@color/black"
+                        android:includeFontPadding="false"
+                        android:textSize="15sp"
+                        android:fontFamily="@font/daretro_regular"
+                        android:layout_centerInParent="true" />
+
+
+
+
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>
